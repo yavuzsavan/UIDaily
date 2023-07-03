@@ -1,0 +1,44 @@
+.search{
+    
+    &-form{
+
+        &__input{
+        width: 608px;
+        padding: $xs;
+        border: $border;
+        border-radius: 4px;
+        margin-bottom: $s;
+
+        &::placeholder{
+            font-family: $first-font;
+            font-weight: $font-bold;
+            font-size: $fs-s;
+            color: $downriver;
+        }
+    }
+    }
+
+    &-option{
+        @include flex(8px);
+        margin-bottom: $m;
+        
+        &__input{
+
+        }
+
+        &__icon{
+        }
+    }
+
+    &-feature{
+        @include flex($s, column);
+        list-style-type: none;
+        margin-bottom: $l;
+
+        &__item{
+            ::before{
+
+            }
+        }
+    }
+}

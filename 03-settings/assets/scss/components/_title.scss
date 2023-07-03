@@ -1,0 +1,11 @@
+.title{
+    color: $port-gore;
+    font-family: $first-font;
+    font-size: $fs-lg;
+    font-weight: $fw-bold;
+
+    &.-sub{
+        font-size: $fs-md;
+        margin-bottom: $md;
+    }
+}

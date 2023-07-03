@@ -1,0 +1,105 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 71px;
+  height: 43px;
+
+  & input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+    &:checked + .slider {
+      &::before {
+        background-color: $port-gore;
+        -webkit-transform: translateX(27px);
+        -ms-transform: translateX(27px);
+        transform: translateX(27px);
+      }
+    }
+  }
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $selago;
+  border-radius: 32px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 27px;
+    width: 27px;
+    left: 8px;
+    bottom: 8px;
+    background-color: $white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    @include border(1px, solid, $cold-purple, 32px);
+  }
+}
+// -------------------------------------------------------------------------------------------------
+.radio{
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  font-size: 26px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;  
+
+  & input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+
+    &:checked ~ .checkmark{
+      background-color: $white;
+
+      &::after{
+        display: block;
+      }
+    }
+  }
+  
+  & .checkmark::after{
+    top: 3.2px;
+    left: 3.4px;
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    background: $port-gore;
+  }
+  &:hover input ~ .checkmark{
+    background: $selago;
+  }
+  // &__input{}
+}
+
+.checkmark{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  background-color: $white;
+  @include border(1px, solid, $cold-purple, 32px);
+
+  &::after{
+    content: "";
+    position: absolute;
+    display: none;
+  }
+}

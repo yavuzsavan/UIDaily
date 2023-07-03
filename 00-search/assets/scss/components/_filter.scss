@@ -1,0 +1,57 @@
+.filter-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: $small;  
+
+  &__item {
+    width: 112px;
+    @include flex(column);
+    padding: $medium;
+    border-radius: $xsmall;
+    text-transform: capitalize;
+    cursor: pointer;
+
+    &.-humming-bird {
+      background-color: $humming-bird;
+    }
+
+    &.-zircon {
+      background-color: $zircon;
+    }
+
+    &.-blue-chalk {
+      background-color: $blue-chalk;
+    }
+
+    &.-fair-pink {
+      background-color: $fair-pink;
+    }
+
+    &.-snow-flurry {
+      background-color: $snow-flurry;
+    }
+
+    &.-barley-white {
+      background-color: $barley-white;
+    }
+
+    &.-tuft-bush{
+        background-color: $tuft-bush;
+    }
+
+    &.-white{
+        background-color: $white;
+        border: $s-border;
+    }
+
+    &:hover {
+      box-shadow: $md-shadow;
+      border: $s-border;
+    }
+
+    &:active {
+      box-shadow: $sm-shadow;
+    }
+  }
+}

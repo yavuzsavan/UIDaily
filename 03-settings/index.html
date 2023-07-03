@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Settings</title>
+  </head>
+  <body>
+    <aside class="settings">
+      <div class="settings__form group -column -gap-lg"> 
+        <p class="title">Settings</p>
+
+        <div class="group -column -gap-sm">
+          <div class="settings__option -between">
+            <label class="label" for="darkmode">Dark mode</label>
+            <label class="switch">
+              <input class="switch__input" type="checkbox" id="darkmode" value="1"/>
+              <span class="slider"></span>
+            </label>
+          </div>
+          <div class="settings__option -between">
+            <label class="label" for="notifications">Desktop notifications</label>
+            <label class="switch">
+              <input class="switch__input" type="checkbox" id="notifications" value="1"/>
+              <span class="slider"></span>
+            </label>
+          </div>
+          <div class="settings__option -between">
+            <label class="label" for="inbox">Focused inbox</label>
+            <label class="switch">
+              <input class="switch__input" type="checkbox" id="inbox" value="1"/>
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="group -column -gap-sm">
+          <p class="title -sub">Conversation view</p>
+          <div class="settings__option">
+            <label class="radio">
+              <input class="radio__input" type="radio" name="view" id="view1" value="top" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="label" for="news">Newest on top</label>
+          </div>
+          <div class="settings__option">
+            <label class="radio">
+              <input class="radio__input" type="radio" name="view" id="view2" value="bottom" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="label" for="news">Newst on bottom</label>
+          </div>
+          <div class="settings__option">
+            <label class="radio">
+              <input class="radio__input" type="radio" name="view" id="view3" value="off" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="label" for="news">Off</label>
+          </div>
+        </div>
+
+        <div class="group -column -gap-sm">
+          <p class="title -sub">Reading Panel</p>
+          <div class="settings__option">
+            <label class="radio">
+              <input class="radio__input" type="radio" name="panel" id="panel1" value="right" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="label" for="">Show on the right</label>
+          </div>
+          <div class="settings__option">
+            <label class="radio">
+              <input class="radio__input" type="radio" name="panel" id="panel2" value="bottom" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="label" for="">Show on the bottom</label>
+          </div>
+          <div class="settings__option">
+            <label class="radio">
+              <input class="radio__input" type="radio" name="panel" id="panel3" value="hide" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="label" for="">Hide</label>
+          </div>
+        </div>
+
+        <a class="" href="#">View all settings</a>
+    </div>
+    </aside>
+  </body>
+</html>

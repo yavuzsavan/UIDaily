@@ -1,0 +1,16 @@
+.btn{
+    color: $white;
+    padding: 12px;
+    border-radius: $xxsmall;
+    cursor: pointer;
+    text-transform: capitalize;
+    @include flex(row, $xsmall);
+    font-family: $first-font;
+    font-size: $medium-font;
+    gap: 10px;
+
+    &.-valhalla {
+        background-color: $valhalla;
+    }
+}
+

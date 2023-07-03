@@ -1,0 +1,32 @@
+.search {
+    display: flex;
+    gap: $small;
+    margin-bottom: $large;
+    
+    &__form {
+        width: 354px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    &__icon{
+        position: absolute;
+        top: 18px;
+        left: 12px;
+    }
+
+    &__input{
+        width: 100%;
+        padding: $small;
+        padding-left: 48px;
+        border-radius: $xxsmall;
+        border: $s-border;
+        font-family: $first-font;
+        font-weight: $medium-font;
+        
+        &::placeholder{
+            color: rgba(40, 26, 81, 0.54);
+        }
+    }
+}

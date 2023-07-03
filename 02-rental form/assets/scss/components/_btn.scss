@@ -1,0 +1,16 @@
+.btn{
+    display: flex;
+    justify-content: center;
+    padding: $l;
+    border-radius: 30px;
+    border: none;
+    
+    &.-persimmon{
+        width: 608px;
+        background-color: $persimmon;
+        font-family: $first-font;
+        font-weight: $font-bold;
+        font-size: $fs-m;
+        color: $white;
+    }
+}

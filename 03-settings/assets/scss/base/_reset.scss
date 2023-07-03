@@ -1,0 +1,28 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  -ms-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+
+body{
+    background-color: $selago;
+    height: 100vh;
+    @include flex(row, center, center);
+
+}
+
+li{
+  list-style-type: none;
+}
+
+a{
+  color: black;
+  font-family: $second-font;
+  font-weight: $fw-medium;
+  font-size: $fs-sm;
+}

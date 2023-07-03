@@ -1,0 +1,21 @@
+
+.category{
+    width: 640px;
+    height: 464px;
+    @include flex(column);
+    background-color: $white;
+    padding: $large;
+    border-radius: $medium;
+    box-shadow: $bg-shadow;
+    position: relative;
+
+    &::before{
+        content: "";
+        position: absolute;
+        width: 421px;
+        height: 613px;
+        background-color: $selago;
+        border-radius: 31px;
+        z-index: -1;
+    }  
+}

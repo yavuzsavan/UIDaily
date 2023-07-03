@@ -1,0 +1,16 @@
+.settings {
+  background-color: $white;
+
+  box-shadow: $shadow;
+
+  @include border(1px, solid, #000, 24px);
+  &__form {
+    padding: $xl;
+  }
+  &__option{
+    width: 100%;
+    
+    display: flex;
+    gap: 12px;
+  }
+}

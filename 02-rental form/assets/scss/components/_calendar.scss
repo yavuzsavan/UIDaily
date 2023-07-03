@@ -1,0 +1,19 @@
+.calendar {
+  @include flex($xs);
+  margin-bottom: $m;
+  
+  &__date {
+    
+  }
+
+  &__time {
+
+  }
+
+  &-pick {
+
+  }
+
+  &-delivery {
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets\css\main.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- tooltip  -->
+    <!-- 4 group -->
+    <main class="card">
+        <div class="search">
+            <div class="search-form">
+            <p class="text-title">search for a rental car</p>
+            <p class="text-label">pick up a location</p>
+            <input class="search-form__input" type="search" placeholder="city, airport, region, district...">
+            <div class="search-option">
+                <input class="search-option__input" type="checkbox" name="delivery">
+                <label for="delivery">deliver the car somewhere else</label>
+            </div>
+            </div>
+            <div class="calendar">
+                <div class="calendar-pick">
+                    <p class="text-label">date of pickup</p>
+                    <!-- calendar__date -->
+                    <input class="calendar__date" type="date">
+                    <!-- calendar__hour -->
+                    <input class="calendar__hour" type="time">
+                </div>
+                <div class="calendar-delivery">
+                    <p class="text-label">date of delivery</p>
+                    <!-- calendar__date -->
+                    <input class="calendar__date" type="date">
+                    <!-- calendar__hour -->
+                    <input class="calendar__time" type="time">
+                </div>
+            </div>
+            <div class="search-option">
+                <input class="search-option__input" type="checkbox" name="age">
+                <label for="age">the driver's age between 30 and 65?</label>
+                <img class="search-option__icon" src="assets\icons\info.svg" alt="info">
+            </div>
+            <ul class="search-feature">
+                <li class="search-feature__item">no credit card fees</li>
+                <li class="search-feature__item">no change fees</li>
+                <li class="search-feature__item">no price match guarantee</li>
+            </ul>
+            <button class="btn -persimmon">search</button>
+        </div>
+    </main>
+</body>
+</html>

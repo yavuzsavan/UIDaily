@@ -1,0 +1,14 @@
+.text{
+    
+    &-title{
+        font-family: $second-font;
+        font-size: $fs-l;
+        padding-bottom: $l;
+    }
+
+    &-label{
+        font-family: $first-font;
+        font-size: $fs-xs;
+        padding-bottom: $xxs;
+    }
+}
