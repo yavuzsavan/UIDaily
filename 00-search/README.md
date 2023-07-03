@@ -1,0 +1,1 @@
+[output](https://scss-practise-j3git57w5-yavuzsavan.vercel.app/)
