@@ -1,0 +1,1 @@
+[output](https://settings-7vcyk1mv9-yavuzsavan.vercel.app/)
